@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+
+/* font stuff always go to body */
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-white;
+}
+
+/* ----- HEADINGS ----- */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.heading-primary {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 240%;
+    word-spacing: .4rem;
+    letter-spacing: .1rem;
+}
+
+.heading-secondary {
+    
+}
+
+.heading-tertiary {
+    
+}
+
+/* ----- PARAGRAPHS ----- */
+.paragraph {
+    
+}
+
+/* ----- ICONS ----- */

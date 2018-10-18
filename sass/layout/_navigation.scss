@@ -1,0 +1,27 @@
+/* Main navi */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 3rem;
+    
+    li {
+        display: inline-block;
+        margin-left: 4rem;
+        
+        a:link,
+        a:visited {
+            padding-top: .8rem 0;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: $default-font-size;
+            border-bottom: .2rem solid transparent;
+            transition: border-bottom 0.2s;
+        }
+        
+        a:hover,
+        a:active {
+            border-bottom: .2rem solid $color-primary;
+        }
+    }
+}
