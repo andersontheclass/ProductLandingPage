@@ -1,0 +1,17 @@
+
+
+.box {
+    padding: 1rem;
+
+    &__paragraph {
+        font-weight: 100;
+    }
+    
+    .icon--big {
+        font-size: $default-font-size + 6.5rem;
+        margin-left: 13%;
+    }
+}
+
+
+
