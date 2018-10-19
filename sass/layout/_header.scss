@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient(rgba($color-black, 0.7), rgba($color-black, 0.7)), url(../img/header.jpg);
+    background-image: linear-gradient(rgba($color-black, 0.75), rgba($color-black, 0.75)), url(../img/header.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -12,5 +12,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    
 }
 

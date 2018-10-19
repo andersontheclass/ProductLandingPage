@@ -3,13 +3,55 @@
 // -----------------------------------------------------------------------------
 
 /* ----- LINKS ----- */
+a:link,
+a:visited {
+    padding-bottom: 9px;
+    text-decoration: none;
+    font-size: $default-font-size - .3rem;
+    //transition: all .2s;
+}
 
-
-
+a:hover,
+a:active {
+    border-bottom: .2rem solid $color-primary;
+}
 
 
 /* ----- BUTTONS ----- */
-
+.btn {
+    letter-spacing: .18rem;
+    
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 20rem;
+        transition: all .2s;
+    }
+    
+    &:hover,
+    &:active {
+        background-color: $color-primary;
+    }
+    
+    &--ghost {
+        
+        &:link,
+        &:visited {
+            border: .1rem solid $color-primary;
+            color: $color-primary;
+        }
+        
+        &:hover,
+        &:active {
+            border: .1rem solid $color-primary;
+            color: $color-white;
+        }
+        
+    }
+}
 
 
 
