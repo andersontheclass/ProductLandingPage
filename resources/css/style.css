@@ -14,7 +14,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 ::selection {
   background-color: #8BC34A;
@@ -120,6 +121,12 @@ a:active {
   .btn--ghost:hover, .btn--ghost:active {
     border: 0.1rem solid #228B22;
     color: #fff; }
+  .btn--full:link, .btn--full:visited {
+    background-color: #228B22;
+    border: 0.1rem solid #228B22;
+    color: #fff; }
+  .btn--full:hover, .btn--full:active {
+    border: 0.1rem solid #228B22; }
 
 .box {
   padding: 1rem; }
@@ -128,6 +135,66 @@ a:active {
   .box .icon--big {
     font-size: 8.1rem;
     margin-left: 13%; }
+
+.pricing__box {
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 90%;
+  margin-left: 5%; }
+
+.pricing div {
+  padding: 1.8rem;
+  border: 0.2rem solid #f4f4f4; }
+
+.pricing__price {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #228B22;
+  font-size: 3.1rem;
+  font-weight: 100;
+  text-align: center; }
+  .pricing__price span {
+    font-size: 1.7rem;
+    font-weight: 300; }
+
+.pricing div:first-child {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: rgba(226, 219, 219, 0.6); }
+  .pricing div:first-child .heading-tertiary {
+    font-size: 3.1rem; }
+
+.pricing div:last-child {
+  text-align: center; }
+
+.pricing ul {
+  list-style: none; }
+  .pricing ul li {
+    padding: .5rem 0;
+    font-size: 1.75rem; }
+
+.footer {
+  padding: 4rem 4rem; }
+  .footer__nav, .footer__copyright {
+    float: right;
+    list-style: none; }
+    .footer__nav li, .footer__copyright li {
+      display: inline-block;
+      margin-left: 2rem; }
+      .footer__nav li a:link, .footer__nav li a:visited, .footer__copyright li a:link, .footer__copyright li a:visited {
+        font-size: 1.8rem;
+        border: 0;
+        color: #555;
+        transition: all .2s; }
+      .footer__nav li a:hover, .footer__nav li a:active, .footer__copyright li a:hover, .footer__copyright li a:active {
+        color: #333; }
+  .footer__copyright {
+    margin-top: .5rem; }
+    .footer__copyright li {
+      font-weight: 100;
+      letter-spacing: .2rem;
+      font-size: 1.6rem; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/header.jpg);

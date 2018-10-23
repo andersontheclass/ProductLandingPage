@@ -1,0 +1,43 @@
+.footer {
+    padding: 4rem 4rem;
+    
+    
+    &__nav, &__copyright {
+        float: right;
+        list-style: none;
+        
+        li {
+            display: inline-block;
+            margin-left: 2rem;
+            
+            a {
+                &:link,
+                &:visited {
+                    font-size: $default-font-size + .2rem;
+                    border: 0;
+                    color: $color-grey-dark-3;
+                    transition: all .2s;
+                }
+                
+                &:hover,
+                &:active {
+                    color: $color-grey-dark-4;
+                }
+            }
+            
+            &:last-child {
+                //margin-right: 0;
+            }
+        }
+    } 
+    
+    &__copyright {
+        margin-top: .5rem;
+        
+        li {
+            font-weight: 100;
+            letter-spacing: .2rem;
+            font-size: $default-font-size;
+        }
+    }
+}

@@ -51,6 +51,21 @@ a:active {
         }
         
     }
+    
+    &--full {
+        
+        &:link,
+        &:visited {
+            background-color: $color-primary;
+            border: .1rem solid $color-primary;
+            color: $color-white;
+        }
+        
+        &:hover,
+        &:active {
+            border: .1rem solid $color-primary;
+        }
+    }
 }
 
 
