@@ -1,0 +1,35 @@
+.contact-form {
+    display: flex;
+    justify-content: center;
+    
+    input {
+        
+        &[type="email"] {
+            width: 25%;
+            padding: 1.3rem;
+            border-radius: .3rem;
+            border: .1rem solid $color-grey-dark-2;
+        }
+        
+        &[type="submit"] {
+            letter-spacing: .1rem;
+            
+            &:link,
+            &:visited {
+                background-color: $color-primary;
+                border: .1rem solid $color-primary;
+                color: $color-white;
+            }
+
+            &:hover, 
+            &:active {
+                border: .1rem solid $color-primary;
+            }
+        }
+        
+        
+        
+    }
+    
+}
+

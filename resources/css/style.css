@@ -136,6 +136,23 @@ a:active {
     font-size: 8.1rem;
     margin-left: 13%; }
 
+.contact-form {
+  display: flex;
+  justify-content: center; }
+  .contact-form input[type="email"] {
+    width: 25%;
+    padding: 1.3rem;
+    border-radius: .3rem;
+    border: 0.1rem solid #999; }
+  .contact-form input[type="submit"] {
+    letter-spacing: .1rem; }
+    .contact-form input[type="submit"]:link, .contact-form input[type="submit"]:visited {
+      background-color: #228B22;
+      border: 0.1rem solid #228B22;
+      color: #fff; }
+    .contact-form input[type="submit"]:hover, .contact-form input[type="submit"]:active {
+      border: 0.1rem solid #228B22; }
+
 .pricing__box {
   background-color: #fff;
   border-radius: 2rem;
@@ -173,6 +190,18 @@ a:active {
   .pricing ul li {
     padding: .5rem 0;
     font-size: 1.75rem; }
+
+.video {
+  opacity: .6;
+  text-align: center; }
+  .video__content {
+    height: auto;
+    width: 70%;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 5rem;
+    margin-top: 2rem; }
 
 .footer {
   padding: 4rem 4rem; }
@@ -253,6 +282,9 @@ section {
 .row {
   max-width: 1140px;
   margin: 0 auto; }
+
+.section-features {
+  background-color: #f7f7f7; }
 
 .section-pricing {
   background-color: #f4f4f4; }

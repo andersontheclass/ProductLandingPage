@@ -1,0 +1,14 @@
+.video {
+    opacity: .6;
+    text-align: center;
+    
+    &__content {
+        height: auto;
+        width: 70%;
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 5rem;
+        margin-top: 2rem;
+    }    
+}
