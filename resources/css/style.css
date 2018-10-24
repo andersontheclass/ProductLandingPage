@@ -34,7 +34,9 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 56.25%; }
+      html .col {
+        margin: 0 0 4% 0; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -43,7 +45,9 @@ html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 40%; } }
+      font-size: 40%; }
+      html .heading-primary {
+        font-size: 3.1rem; } }
 
 body {
   box-sizing: border-box;
@@ -133,6 +137,10 @@ a:visited {
   padding-bottom: 9px;
   text-decoration: none;
   font-size: 1.3rem; }
+  @media only screen and (max-width: 37.5em) {
+    a:link,
+    a:visited {
+      font-size: 1.9rem; } }
 
 a:hover,
 a:active {
@@ -256,6 +264,7 @@ a:active {
     margin-top: 2rem; }
 
 .footer {
+  background-color: #777;
   padding: 4rem 4rem; }
   .footer__nav, .footer__copyright {
     float: right;
@@ -266,16 +275,23 @@ a:active {
       .footer__nav li a:link, .footer__nav li a:visited, .footer__copyright li a:link, .footer__copyright li a:visited {
         font-size: 1.8rem;
         border: 0;
-        color: #555;
+        color: #fff;
         transition: all .2s; }
       .footer__nav li a:hover, .footer__nav li a:active, .footer__copyright li a:hover, .footer__copyright li a:active {
-        color: #333; }
+        color: rgba(238, 238, 238, 0.6); }
+      @media only screen and (max-width: 37.5em) {
+        .footer__nav li, .footer__copyright li {
+          letter-spacing: .2rem; } }
   .footer__copyright {
-    margin-top: .5rem; }
+    margin-top: .5rem;
+    color: #fff; }
     .footer__copyright li {
       font-weight: 100;
       letter-spacing: .2rem;
       font-size: 1.6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__copyright li {
+          letter-spacing: .3rem; } }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/header.jpg);
@@ -306,7 +322,6 @@ a:active {
         width: 100%;
         margin-left: 4%; } }
 
-/* Main navi */
 .nav-bar .row .logo {
   float: left;
   color: #fff;
@@ -333,6 +348,10 @@ a:active {
       font-size: 1.6rem;
       border-bottom: .2rem solid transparent;
       transition: all .2s; }
+      @media only screen and (max-width: 37.5em) {
+        .nav-bar .row .main-nav li a:link,
+        .nav-bar .row .main-nav li a:visited {
+          border-bottom: none; } }
     .nav-bar .row .main-nav li a:hover,
     .nav-bar .row .main-nav li a:active {
       border-bottom: 0.2rem solid #228B22; }
@@ -348,7 +367,8 @@ a:active {
   padding: 1.5rem;
   width: 100%;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.97); }
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 0.2rem 2.5rem #777; }
   .sticky .logo {
     color: #999 !important;
     font-weight: 800; }

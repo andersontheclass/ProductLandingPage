@@ -9,6 +9,10 @@ a:visited {
     text-decoration: none;
     font-size: $default-font-size - .3rem;
     //transition: all .2s;
+    
+    @include respond(phone) {
+        font-size: $default-font-size + .3rem;
+    }
 }
 
 a:hover,

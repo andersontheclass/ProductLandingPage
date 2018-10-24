@@ -33,7 +33,7 @@
             
             &:hover,
             &:active {
-                background-color: rgba(34, 139, 34, 0.8);
+                background-color: rgba($color-primary, 0.8);
             }
         } 
     }
