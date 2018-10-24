@@ -4,30 +4,12 @@
     .row {
         
         .logo {
-
             float: left;
-            margin-top: 2rem;
-            display: inline-block;
+            color: $color-white;
+            //margin-top: 1.3rem;
+            display: block;
             font-family: cursive;
-            font-size: $default-font-size + .5rem !important;
-            text-transform: none !important;
-
-            &:link,
-            &:visited {
-                padding-top: .8rem 0;
-                color: $color-white;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: $default-font-size;
-                border-bottom: .2rem solid transparent;
-                transition: border-bottom 0.2s;
-            }
-
-            &:hover,
-            &:active {
-                border-bottom: .2rem solid $color-primary;
-            }
-
+            font-size: $default-font-size + .5rem;
         }
 
         .main-nav {
@@ -38,7 +20,12 @@
             li {
                 display: inline-block;
                 margin-left: 4rem;
-
+                
+                @include respond(phone) {
+                    margin-left: 2rem;
+                    margin-right: 1rem;
+                }
+                
                 a:link,
                 a:visited {
                     padding-top: .8rem 0;
@@ -52,11 +39,51 @@
                 a:hover,
                 a:active {
                     border-bottom: .2rem solid $color-primary;
+                    
+                    @include respond(phone) {
+                        border-bottom: none;
+                    }
                 }
             }
         }
-
     }
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.97);
+    
+    .logo {
+        color: $color-grey-dark-2 !important;
+        font-weight: 800;
+    }
+}
+
+.sticky .main-nav {
+    margin-top: 1.8rem !important;
+ 
+    li {
+        a:link,
+        a:visited {
+            padding: 2rem 0 !important;
+            color: $color-grey-dark-2 !important;
+        }
+        
+        a:hover,
+        a:active {
+            @include respond(phone) {
+                border-bottom: none;
+            }
+        }
+        //&:last-child { display: none; }
+    }
+}
+
+
 
 

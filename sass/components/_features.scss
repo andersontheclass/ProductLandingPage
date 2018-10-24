@@ -5,11 +5,19 @@
 
     &__paragraph {
         font-weight: 100;
+        
+        @include respond(phone) {
+            text-align: justify;
+        }
     }
     
     .icon--big {
         font-size: $default-font-size + 6.5rem;
         margin-left: 13%;
+        
+        @include respond(phone) {
+            margin-left: 2%;
+        }
     }
 }
 

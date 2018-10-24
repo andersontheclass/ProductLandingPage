@@ -15,22 +15,23 @@
         <header id="header" class="header">
             <nav id="nav-bar" class="nav-bar">
                 <div class="row">
-                    <a class="logo" id="header-img" href="#">MetroApp</a>
-                    <ul class="main-nav">
+                    
+                    <ul class="main-nav js--main-nav">
+                        <p class="logo" id="header-img">MetroApp</p>
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#how-it-works">Video hwitwrks</a></li>
+                        <li><a href="#how-it-works">How it works</a></li>
                         <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#sign-up">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="header__text-box">
                 <h1 class="heading-primary">Save time.<br>By just paying online.</h1>
-                <a href="#" class="btn btn--ghost">More Details</a>
+                <a href="#" class="btn btn--ghost js--scroll-to-features">More Details</a>
             </div>
         </header>
         <main class="container">
-            <section class="section-features">
+            <section class="section-features js--section-features" id="features">
                 <div class="row">
                     <h2 class="heading-secondary">Always on time &mdash; Do not get late</h2>
                 </div>
@@ -59,7 +60,7 @@
                 </div>
             </section>
             
-            <section class="section-how-it-works">
+            <section class="section-how-it-works" id="how-it-works">
                <div class="row">
                    <h2 class="heading-secondary">Don't miss it anymore</h2>
                </div>
@@ -72,7 +73,7 @@
                 </div>
             </section>
             
-            <section class="section-pricing">
+            <section class="section-pricing" id="pricing">
                 <div class="row">
                     <h2 class="heading-secondary">flexible &mdash; meet your requirements</h2>
                 </div>
@@ -143,7 +144,7 @@
                 </div>
             </section>
             
-            <section class="section-form">
+            <section class="section-form" id="sign-up">
                 <div class="row">
                     <h2 class="heading-secondary">Get subscribed &mdash; We won't span you</h2>
                 </div>
@@ -183,5 +184,8 @@
                 </ul>
             </div>
         </footer>
+        <script src="vendors/js/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>

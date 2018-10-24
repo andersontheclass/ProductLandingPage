@@ -1,3 +1,23 @@
+/*
+
+1em = 16px; example: 16px / 2em = "8em"
+
+0 - 600px/37.5em: phone
+600 - 900px/56.25em: tablet portrait
+900 - 1200px/75em: tablet landscape
+[1200px/75em - 1800px/112.5em] is where our normal style apply
+1800px/112.5em + : Big desktop 
+
+$breakpoint argument choices:
+- phone
+- tab-portrait
+- tab-landscape
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px;
+*/
 /* Colors
 forestgreen: #228B22;
 Light-gree: #8BC34A;
@@ -12,10 +32,25 @@ Light-gree: #8BC34A;
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
   overflow-x: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 ::selection {
   background-color: #8BC34A;
@@ -133,9 +168,15 @@ a:active {
   padding: 1rem; }
   .box__paragraph {
     font-weight: 100; }
+    @media only screen and (max-width: 37.5em) {
+      .box__paragraph {
+        text-align: justify; } }
   .box .icon--big {
     font-size: 8.1rem;
     margin-left: 13%; }
+    @media only screen and (max-width: 37.5em) {
+      .box .icon--big {
+        margin-left: 2%; } }
 
 .contact-form {
   width: 60%;
@@ -248,25 +289,30 @@ a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 56.25em) {
+      .header__text-box {
+        width: 100%;
+        margin-left: 4%; } }
+    @media only screen and (max-width: 75em) {
+      .header__text-box {
+        width: 100%;
+        margin-left: 4%; } }
+    @media only screen and (min-width: 112.5em) {
+      .header__text-box {
+        width: 100%;
+        margin-left: 4%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__text-box {
+        width: 100%;
+        margin-left: 4%; } }
 
 /* Main navi */
 .nav-bar .row .logo {
   float: left;
-  margin-top: 2rem;
-  display: inline-block;
+  color: #fff;
+  display: block;
   font-family: cursive;
-  font-size: 2.1rem !important;
-  text-transform: none !important; }
-  .nav-bar .row .logo:link, .nav-bar .row .logo:visited {
-    padding-top: .8rem 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    border-bottom: .2rem solid transparent;
-    transition: border-bottom 0.2s; }
-  .nav-bar .row .logo:hover, .nav-bar .row .logo:active {
-    border-bottom: 0.2rem solid #228B22; }
+  font-size: 2.1rem; }
 
 .nav-bar .row .main-nav {
   float: right;
@@ -275,6 +321,10 @@ a:active {
   .nav-bar .row .main-nav li {
     display: inline-block;
     margin-left: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav-bar .row .main-nav li {
+        margin-left: 2rem;
+        margin-right: 1rem; } }
     .nav-bar .row .main-nav li a:link,
     .nav-bar .row .main-nav li a:visited {
       padding-top: .8rem 0;
@@ -286,6 +336,33 @@ a:active {
     .nav-bar .row .main-nav li a:hover,
     .nav-bar .row .main-nav li a:active {
       border-bottom: 0.2rem solid #228B22; }
+      @media only screen and (max-width: 37.5em) {
+        .nav-bar .row .main-nav li a:hover,
+        .nav-bar .row .main-nav li a:active {
+          border-bottom: none; } }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.5rem;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.97); }
+  .sticky .logo {
+    color: #999 !important;
+    font-weight: 800; }
+
+.sticky .main-nav {
+  margin-top: 1.8rem !important; }
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 2rem 0 !important;
+    color: #999 !important; }
+  @media only screen and (max-width: 37.5em) {
+    .sticky .main-nav li a:hover,
+    .sticky .main-nav li a:active {
+      border-bottom: none; } }
 
 section {
   padding: 80px 0; }
