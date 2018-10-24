@@ -20,7 +20,7 @@ a:active {
 /* ----- BUTTONS ----- */
 .btn {
     letter-spacing: .18rem;
-    
+
     &:link,
     &:visited {
         display: inline-block;
@@ -53,17 +53,19 @@ a:active {
     }
     
     &--full {
+        background-color: $color-primary;
+        color: $color-white;
         
         &:link,
         &:visited {
             background-color: $color-primary;
-            border: .1rem solid $color-primary;
             color: $color-white;
+            border: .1rem solid $color-primary;
         }
         
         &:hover,
         &:active {
-            border: .1rem solid $color-primary;
+            //background-color: $color-primary;
         }
     }
 }

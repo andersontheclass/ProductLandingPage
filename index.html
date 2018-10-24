@@ -64,7 +64,7 @@
                    <h2 class="heading-secondary">Don't miss it anymore</h2>
                </div>
                 <div class="row video">
-                    <video class="video__content" autoplay muted id="video">
+                    <video class="video__content" autoplay muted loop id="video">
                        <source src="resources/img/video.mp4" type="video/mp4">
                        <source src="resources/img/video.webm" type="video/webm">
                         Your browser is not supported! ):
@@ -149,8 +149,22 @@
                 </div>
                 <div class="row">
                     <form action="" class="contact-form" id="form">
-                        <input type="email" name="name" id="email" placeholder="john.doe@email.com">
-                        <input type="submit" value="Subscribe">
+                       <div class="row">
+                           <div class="col span-1-of-3">
+                               <label for="email">Email</label>
+                           </div>
+                           <div class="col span-2-of-3">
+                               <input type="email" name="name" id="email" placeholder="john.doe@email.com">
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col span-1-of-3">
+                               <label>&nbsp;</label>
+                           </div>
+                           <div class="col span-2-of-3">
+                               <input type="submit" id="submit" value="Subscribe" name="name">
+                           </div>
+                       </div>    
                     </form>
                 </div>
             </section>

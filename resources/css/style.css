@@ -121,12 +121,13 @@ a:active {
   .btn--ghost:hover, .btn--ghost:active {
     border: 0.1rem solid #228B22;
     color: #fff; }
-  .btn--full:link, .btn--full:visited {
+  .btn--full {
     background-color: #228B22;
-    border: 0.1rem solid #228B22;
     color: #fff; }
-  .btn--full:hover, .btn--full:active {
-    border: 0.1rem solid #228B22; }
+    .btn--full:link, .btn--full:visited {
+      background-color: #228B22;
+      color: #fff;
+      border: 0.1rem solid #228B22; }
 
 .box {
   padding: 1rem; }
@@ -137,21 +138,31 @@ a:active {
     margin-left: 13%; }
 
 .contact-form {
-  display: flex;
-  justify-content: center; }
+  width: 60%;
+  margin: 0 auto; }
+  .contact-form label {
+    font-size: 2.2rem;
+    font-weight: 500; }
   .contact-form input[type="email"] {
-    width: 25%;
-    padding: 1.3rem;
+    width: 90%;
+    padding: 1rem;
     border-radius: .3rem;
+    font-size: 1.5rem;
     border: 0.1rem solid #999; }
   .contact-form input[type="submit"] {
-    letter-spacing: .1rem; }
-    .contact-form input[type="submit"]:link, .contact-form input[type="submit"]:visited {
-      background-color: #228B22;
-      border: 0.1rem solid #228B22;
-      color: #fff; }
+    margin-top: 2rem;
+    letter-spacing: .18rem;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4rem;
+    border: none;
+    background-color: #228B22;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem; }
     .contact-form input[type="submit"]:hover, .contact-form input[type="submit"]:active {
-      border: 0.1rem solid #228B22; }
+      background-color: rgba(34, 139, 34, 0.8); }
 
 .pricing__box {
   background-color: #fff;
