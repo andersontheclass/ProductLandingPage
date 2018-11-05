@@ -339,7 +339,7 @@ a:active {
     @media only screen and (max-width: 37.5em) {
       .nav-bar .row .main-nav li {
         margin-left: 2rem;
-        margin-right: 1rem; } }
+        margin-right: .5rem; } }
     .nav-bar .row .main-nav li a:link,
     .nav-bar .row .main-nav li a:visited {
       padding-top: .8rem 0;
