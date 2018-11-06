@@ -339,8 +339,8 @@ a:active {
     margin-left: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .nav-bar .row .main-nav li {
-        margin-left: 2rem;
-        margin-right: .5rem; } }
+        margin-left: 1rem;
+        margin-right: 0; } }
     .nav-bar .row .main-nav li a:link,
     .nav-bar .row .main-nav li a:visited {
       padding-top: .8rem 0;
@@ -365,12 +365,16 @@ a:active {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   padding-top: 0;
   width: 100%;
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 0.2rem 2.5rem #777; }
+  @media only screen and (max-width: 37.5em) {
+    .sticky {
+      padding: 1rem !important;
+      margin-right: 0; } }
   .sticky .logo {
     color: #999 !important;
     font-weight: 800; }
