@@ -19,12 +19,12 @@
             padding-top: 1.5rem;
             li {
                 display: inline-block;
-                margin-left: 4rem;
+                margin-left: 1rem;
                 
                 @include respond(phone) {
-                    margin-left: 1rem;
+                    margin-left: .8rem;
                     margin-right: 0;
-                    
+                    padding: 0;
                 }
                 
                 a:link,
@@ -59,17 +59,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1rem;
-    padding-top: 0;
+    padding-bottom: 1.5rem;
+    //padding-top: 0;
     width: 100%;
     z-index: 9999;
     background-color: rgba(255, 255, 255, 0.97);
     box-shadow: 0 .2rem 2.5rem $color-grey-dark-1;
-    
-    @include respond(phone) {
-        padding: 1rem !important;
-        margin-right: 0;
-    }
     
     .logo {
         color: $color-grey-dark-2 !important;
